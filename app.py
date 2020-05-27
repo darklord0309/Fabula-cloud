@@ -30,7 +30,7 @@ todos = [
 ]
 
 class Todo(Resource):
-  def get():
+  def get(self):
     args = parser.parse_args()
     id = args['id']
     for todo in todos:
